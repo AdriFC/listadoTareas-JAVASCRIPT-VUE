@@ -1,9 +1,19 @@
 <template>
-    <div>
-        <button @click="changeFilter('all')">Todas</button>
-        <button @click="changeFilter('incompleted')">Incompletas</button>
-        <button @click="changeFilter('completed')">Completadas</button>
+    
+        
+    <div class="md-layout md-gutter">
+      <div class="md-layout-item md-size-25"></div>
+      <div class="md-layout-item md-size-50">
+        <md-button @click="changeFilter('all')" class="md-primary">Todas</md-button>        
+        <md-button @click="changeFilter('incompleted')" class="md-primary">Incompletas</md-button>       
+        <md-button @click="changeFilter('completed')" class="md-primary">Completadas</md-button>
+      </div>
+      <div class="md-layout-item md-size-25"></div>
     </div>
+
+
+
+
 </template>
 
 <script>
